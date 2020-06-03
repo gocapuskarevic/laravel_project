@@ -16,3 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/about','PagesControllers@about');
+
+Route::get('/hello',function(){
+    return 'Ovako to ide';
+});
