@@ -11,12 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PagesControllers@index');
 
 Route::get('/about','PagesControllers@about');
 
-Route::get('/hello',function(){
-    return 'Ovako to ide';
-});
+Route::get('/services', 'PagesControllers@services');
