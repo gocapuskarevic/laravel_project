@@ -7,12 +7,20 @@ use Illuminate\Http\Request;
 class PagesControllers extends Controller
 {
     public function index(){
-        return view('pages.index');
+        $naslov = "Dobrodosli na pocetnu stranu";
+        return view('project-pages.index', compact('naslov'));
     }
     public function about(){
-        return view('pages.about');
+        return view('project-pages.about');
     }
-    public function login(){
+    public function services(){
+        $data = array(
+                    'heading'    => 'Nasa muzika',
+                    'categories' =>['Pop','Rock',"Punk"]
+                    );
+        return view('project-pages.services')->with($data);
+    }
+    /* public function login(){
         return view('pages.login');
     }
     public function posts(){
@@ -23,5 +31,5 @@ class PagesControllers extends Controller
     }
     public function contact(){
         return view('pages.contact');
-    }
+    } */
 }
