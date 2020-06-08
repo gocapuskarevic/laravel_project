@@ -1,4 +1,4 @@
-@extends('layouts.app');
+@extends('layouts.app')
 @section('sadrzaj')
 <h1>{{$heading}}</h1>
 @if(count($categories)>0)
