@@ -18,3 +18,6 @@ Route::get('/about','PagesControllers@about');
 Route::get('/services', 'PagesControllers@services');
 
 Route::resource('posts','PostsController');
+
+Route::get('/posts/edit/{id}','PostsController@edit');
+Route::post('/posts/edit/{id}','PostsController@update');

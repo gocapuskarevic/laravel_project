@@ -14,6 +14,7 @@
     </head>
     <body>
         @include('inc.navbar')
+        @include('inc.errors')
         <div class="container">
             @yield('sadrzaj')
        </div>
