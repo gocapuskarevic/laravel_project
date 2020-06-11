@@ -11,3 +11,9 @@
     {{session('success')}}
   </div>
 @endif
+
+@if(session('admin') && session('admin') == 'failed')
+  <div class="alert alert-danger">
+    Wrong email or password. Try again!
+  </div>
+@endif

@@ -21,3 +21,9 @@ Route::resource('posts','PostsController');
 
 Route::get('/posts/edit/{id}','PostsController@edit');
 Route::post('/posts/edit/{id}','PostsController@update');
+
+
+Route::get('login', array('uses' => 'LoginController@showLogin'));
+
+
+Route::post('login', array('uses' => 'LoginController@doLogin'));
