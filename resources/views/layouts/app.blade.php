@@ -9,6 +9,8 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link rel="stylesheet" href="{{asset('app.css')}}">
+        <link rel="stylesheet" href="{{asset('modern.css')}}">
+        <script type="text/javascript" src="{{asset('main.js')}}"></script>
 
     
     </head>
@@ -19,4 +21,6 @@
             @yield('sadrzaj')
        </div>
     </body>
+     
+
 </html>
